@@ -1,8 +1,21 @@
-const toggleBtn = document.querySelectorAll('.faq-toggle');
-console.log(toggleBtn)
-toggleBtn.forEach((btn)=>{
-    btn.addEventListener('click',()=>{
-       
-        btn.parentNode.classList.toggle('active');
+const faqs= document.querySelectorAll('.faq')
+
+faqs.forEach((faq)=>{
+   
+    faq.addEventListener('click',()=>{
+        const activeFaq = document.querySelector('.active')
+        toggleItem(faq)
+        if(activeFaq && activeFaq!== faq){
+            toggleItem(activeFaq)
+        }
     })
 })
+function toggleItem(item){
+    if(item.classList.contains('active'))
+ {
+    item.classList.remove('active');
+ } 
+ else{
+    item.classList.add('active');
+ }  
+}
