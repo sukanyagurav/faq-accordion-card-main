@@ -86,8 +86,8 @@ main{
 .faq{
     background-color: transparent;
     border-bottom: 1px solid var(--color-light-grayish-blue);
-    margin:1.3rem 0;
-    padding:1rem;
+    margin:0.9rem 0;
+    padding:0.6rem;
     overflow: hidden;
     position:relative;
 
@@ -136,8 +136,8 @@ main{
     font-size:1.2rem;
     color: var(--color-soft-red);
     position: absolute;
-    top:14.6px;
-    right:20px;
+    top:6.7px;
+    right:8px;
     width:25px;
     height:25px;
     border-radius: 50%;
@@ -149,6 +149,22 @@ main{
 }
 .faq-toggle:focus{
     border:none;
+}
+.title-container.active .faq-toggle .fa-chevron-down{
+    transform:rotate(180deg);
+}
+
+footer{
+    padding:1rem;
+    margin-top: 2rem;
+}
+footer p{
+    color:var(--color-light-grayish-blue);
+}
+footer p a{
+    color:var(--color-dark-grayish-blue);
+    text-decoration: none;
+    font-weight: 700;
 }
 @keyframes fromTop{
     from{
@@ -181,22 +197,7 @@ main{
 
     }
 }
-.title-container.active .faq-toggle .fa-chevron-down{
-    transform:rotate(180deg);
-}
 
-footer{
-    padding:1rem;
-    margin-top: 2rem;
-}
-footer p{
-    color:var(--color-light-grayish-blue);
-}
-footer p a{
-    color:var(--color-dark-grayish-blue);
-    text-decoration: none;
-    font-weight: 700;
-}
 
 @media(max-width:850px){
     body{
