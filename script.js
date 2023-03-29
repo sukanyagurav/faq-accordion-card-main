@@ -1,11 +1,11 @@
 const faqs= document.querySelectorAll('.faq')
 
 faqs.forEach((faq)=>{
-   
-    faq.addEventListener('click',()=>{
+   const title =faq.firstElementChild
+    title.addEventListener('click',()=>{
         const activeFaq = document.querySelector('.active')
-        toggleItem(faq)
-        if(activeFaq && activeFaq!== faq){
+        toggleItem(title)
+        if(activeFaq && activeFaq!== title){
             toggleItem(activeFaq)
         }
     })

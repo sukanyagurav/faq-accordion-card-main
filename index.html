@@ -24,62 +24,71 @@
         <img src="images/illustration-woman-online-mobile.svg" class="faq__image" aria-hidden="true" >
       </picture>
     </div>
-    <div class="faqs">
+    <div class="faqs" aria-label="faqs">
       <h1>FAQ</h1>
       <div class="faq-container">
         <div class="faq">
-          <h2 class="faq-title">How many team members can I invite?</h2>
+          <div class="title-container">
+            <h2 class="faq-title" >How many team members can I invite?</h2>
+            <button class="faq-toggle" aria-label="expand" >
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+          </div>
           <p class="faq-description"> You can invite up to 2 additional users on the Free plan. There is no limit on
             team members for the Premium plan.
           </p>
-          <button class="faq-toggle">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-           
-          </button>
+         
         </div>
         <div class="faq">
+          <div class="title-container">
           <h2 class="faq-title">
-            
             What is the maximum file upload size?
           </h2>
+          <button class="faq-toggle" aria-label="expand">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
           <p class="faq-description">
             No more than 2GB. All files in your account must fit your allotted storage space.
           </p>
-          <button class="faq-toggle">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-           
-          </button>
+          
         </div>
         <div class="faq">
-          <h2 class="faq-title">How do I reset my password?</h2>
+          <div class="title-container">
+          <h2 class="faq-title" >How do I reset my password?</h2>
+           <button class="faq-toggle" aria-label="expand" >
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </button> 
+        </div>
+
           <p class="faq-description"> Click “Forgot password” from the login page or “Change password” from your profile
             page.
             A reset link will be emailed to you.
           </p>
-          <button class="faq-toggle">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-           
-          </button> 
+         
         </div>
         <div class="faq">
+          <div class="title-container">
           <h2 class="faq-title">Can I cancel my subscription?</h2>
-          <p class="faq-description">Yes! Send us a message and we’ll process your request no questions asked.
-          </p>
-          <button class="faq-toggle">
+          <button class="faq-toggle" aria-label="expand">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
-           
           </button>
+          </div>
+          <p class="faq-description" >Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+          
         </div>
         <div class="faq">
-          <h2 class="faq-title">Do you provide additional support?</h2>
-          <p class="faq-description"> Chat and email support is available 24/7. Phone lines are open during normal
-            business hours.
-
-          </p>
-          <button class="faq-toggle">
+          <div class="title-container">
+          <h2 class="faq-title" >Do you provide additional support?</h2>
+          <button class="faq-toggle" aria-label="expand" >
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
-           
           </button>
+          </div>
+          <p class="faq-description" > Chat and email support is available 24/7. Phone lines are open during normal
+            business hours.
+          </p>
+         
         </div>
       </div>
     </div>
